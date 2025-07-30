@@ -1,0 +1,48 @@
+[
+  {
+    "channel": "client_info",
+    "message": "{\"clients\":[{\"id\":\"9b9e3f7a-8124-44b8-bee7-839f94710cd4\",\"userId\":\"cmdpw6l0f00004s07pxj407c2\",\"sessionId\":\"0663c9db-6d40-452f-bff1-c110b54d9908\",\"lastPing\":1753885283282,\"events\":[\"notification\",\"test_event\",\"heartbeat\"],\"retryTimeout\":30000}],\"userClients\":{\"cmdpw6l0f00004s07pxj407c2\":[\"9b9e3f7a-8124-44b8-bee7-839f94710cd4\"]},\"sessionClients\":{\"0663c9db-6d40-452f-bff1-c110b54d9908\":[\"9b9e3f7a-8124-44b8-bee7-839f94710cd4\"]},\"timestamp\":1753885283291}",
+    "timestamp": 1753885283291
+  },
+  {
+    "channel": "client_info",
+    "message": "{\"clients\":[{\"id\":\"9b9e3f7a-8124-44b8-bee7-839f94710cd4\",\"userId\":\"cmdpw6l0f00004s07pxj407c2\",\"sessionId\":\"0663c9db-6d40-452f-bff1-c110b54d9908\",\"lastPing\":1753885283282,\"events\":[\"notification\",\"test_event\",\"heartbeat\"],\"retryTimeout\":30000},{\"id\":\"39c6185d-9248-403b-a5f1-9667e013277b\",\"userId\":\"cmdq058kc00004snyj2rvxyt9\",\"sessionId\":\"4fe5deae-bae1-48e5-9555-f378cb96eaf2\",\"lastPing\":1753885286745,\"events\":[\"notification\",\"test_event\",\"heartbeat\"],\"retryTimeout\":30000}],\"userClients\":{\"cmdpw6l0f00004s07pxj407c2\":[\"9b9e3f7a-8124-44b8-bee7-839f94710cd4\"],\"cmdq058kc00004snyj2rvxyt9\":[\"39c6185d-9248-403b-a5f1-9667e013277b\"]},\"sessionClients\":{\"0663c9db-6d40-452f-bff1-c110b54d9908\":[\"9b9e3f7a-8124-44b8-bee7-839f94710cd4\"],\"4fe5deae-bae1-48e5-9555-f378cb96eaf2\":[\"39c6185d-9248-403b-a5f1-9667e013277b\"]},\"timestamp\":1753885286747}",
+    "timestamp": 1753885286747
+  },
+  {
+    "channel": "client_info",
+    "message": "{\"clients\":[{\"id\":\"9b9e3f7a-8124-44b8-bee7-839f94710cd4\",\"userId\":\"cmdpw6l0f00004s07pxj407c2\",\"sessionId\":\"0663c9db-6d40-452f-bff1-c110b54d9908\",\"lastPing\":1753885403293,\"events\":[\"notification\",\"test_event\",\"heartbeat\"],\"retryTimeout\":30000}],\"userClients\":{\"cmdpw6l0f00004s07pxj407c2\":[\"9b9e3f7a-8124-44b8-bee7-839f94710cd4\"]},\"sessionClients\":{\"0663c9db-6d40-452f-bff1-c110b54d9908\":[\"9b9e3f7a-8124-44b8-bee7-839f94710cd4\"]},\"timestamp\":1753885419228}",
+    "timestamp": 1753885419229
+  },
+  {
+    "channel": "client_info",
+    "message": "{\"clients\":[],\"userClients\":{},\"sessionClients\":{},\"timestamp\":1753885419451}",
+    "timestamp": 1753885419451
+  },
+  {
+    "channel": "client_info",
+    "message": "{\"clients\":[{\"id\":\"a96585e1-abf0-4896-b478-5c5cb06e26b8\",\"userId\":\"cmdq058kc00004snyj2rvxyt9\",\"sessionId\":\"5ab62a29-fed0-4a64-a6fe-114ba76e0383\",\"lastPing\":1753885420818,\"events\":[\"notification\",\"test_event\",\"heartbeat\"],\"retryTimeout\":30000}],\"userClients\":{\"cmdq058kc00004snyj2rvxyt9\":[\"a96585e1-abf0-4896-b478-5c5cb06e26b8\"]},\"sessionClients\":{\"5ab62a29-fed0-4a64-a6fe-114ba76e0383\":[\"a96585e1-abf0-4896-b478-5c5cb06e26b8\"]},\"timestamp\":1753885420826}",
+    "timestamp": 1753885420826
+  },
+  {
+    "channel": "client_info",
+    "message": "{\"clients\":[{\"id\":\"a96585e1-abf0-4896-b478-5c5cb06e26b8\",\"userId\":\"cmdq058kc00004snyj2rvxyt9\",\"sessionId\":\"5ab62a29-fed0-4a64-a6fe-114ba76e0383\",\"lastPing\":1753885420818,\"events\":[\"notification\",\"test_event\",\"heartbeat\"],\"retryTimeout\":30000},{\"id\":\"3f5c15f6-01fb-49ba-a65e-73ef0e6804e6\",\"userId\":\"cmdpw6l0f00004s07pxj407c2\",\"sessionId\":\"1cf00db4-b411-4f2c-872f-927dd80dd303\",\"lastPing\":1753885420865,\"events\":[\"notification\",\"test_event\",\"heartbeat\"],\"retryTimeout\":30000}],\"userClients\":{\"cmdq058kc00004snyj2rvxyt9\":[\"a96585e1-abf0-4896-b478-5c5cb06e26b8\"],\"cmdpw6l0f00004s07pxj407c2\":[\"3f5c15f6-01fb-49ba-a65e-73ef0e6804e6\"]},\"sessionClients\":{\"5ab62a29-fed0-4a64-a6fe-114ba76e0383\":[\"a96585e1-abf0-4896-b478-5c5cb06e26b8\"],\"1cf00db4-b411-4f2c-872f-927dd80dd303\":[\"3f5c15f6-01fb-49ba-a65e-73ef0e6804e6\"]},\"timestamp\":1753885420870}",
+    "timestamp": 1753885420870
+  },
+  {
+    "channel": "client_info",
+    "message": "{\"clients\":[{\"id\":\"3f5c15f6-01fb-49ba-a65e-73ef0e6804e6\",\"userId\":\"cmdpw6l0f00004s07pxj407c2\",\"sessionId\":\"1cf00db4-b411-4f2c-872f-927dd80dd303\",\"lastPing\":1753885793689,\"events\":[\"notification\",\"test_event\",\"heartbeat\"],\"retryTimeout\":30000}],\"userClients\":{\"cmdpw6l0f00004s07pxj407c2\":[\"3f5c15f6-01fb-49ba-a65e-73ef0e6804e6\"]},\"sessionClients\":{\"1cf00db4-b411-4f2c-872f-927dd80dd303\":[\"3f5c15f6-01fb-49ba-a65e-73ef0e6804e6\"]},\"timestamp\":1753885818527}",
+    "timestamp": 1753885818527
+  },
+  {
+    "channel": "client_info",
+    "message": "{\"clients\":[],\"userClients\":{},\"sessionClients\":{},\"timestamp\":1753885819222}",
+    "timestamp": 1753885819222
+  },
+  {
+    "id": "client_info-1753885843165-0.64441988063125",
+    "channel": "client_info",
+    "message": "{\"clients\":[{\"id\":\"3e7d1882-56d2-451a-a7b1-05bf526bfcd0\",\"userId\":\"cmdq058kc00004snyj2rvxyt9\",\"sessionId\":\"f18d389c-669e-4812-ade1-8dd6bcf853e0\",\"lastPing\":1753885842105,\"events\":[\"notification\",\"test_event\",\"heartbeat\"],\"retryTimeout\":30000},{\"id\":\"e3ad1c2d-2112-446a-8a34-5c57e711b7ed\",\"userId\":\"cmdpw6l0f00004s07pxj407c2\",\"sessionId\":\"bb7d098d-f874-40a0-93b3-56f3ad9ec375\",\"lastPing\":1753885843164,\"events\":[\"notification\",\"test_event\",\"heartbeat\"],\"retryTimeout\":30000}],\"userClients\":{\"cmdq058kc00004snyj2rvxyt9\":[\"3e7d1882-56d2-451a-a7b1-05bf526bfcd0\"],\"cmdpw6l0f00004s07pxj407c2\":[\"e3ad1c2d-2112-446a-8a34-5c57e711b7ed\"]},\"sessionClients\":{\"f18d389c-669e-4812-ade1-8dd6bcf853e0\":[\"3e7d1882-56d2-451a-a7b1-05bf526bfcd0\"],\"bb7d098d-f874-40a0-93b3-56f3ad9ec375\":[\"e3ad1c2d-2112-446a-8a34-5c57e711b7ed\"]},\"timestamp\":1753885843165}",
+    "timestamp": 1753885843165
+  }
+]

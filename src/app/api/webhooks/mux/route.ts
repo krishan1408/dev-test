@@ -1,6 +1,7 @@
 import { type NextRequest } from "next/server";
 import { headers } from "next/headers";
 import { muxWebhookService } from "@/features/mux";
+import { sendReelUploadProgress, sendReelReady } from "@/features/sse";
 
 /**
  * Handles incoming Mux webhook events
@@ -18,19 +19,62 @@ export async function POST(request: NextRequest) {
     switch (event.type) {
       // Upload-related events
       case "video.upload.created":
+        console.info(`Upload event: ${event.type}`, event.data);
+        // Send initial upload progress
+        if (event.data?.id) {
+          await sendReelUploadProgress('user123', { // TODO: Get actual user ID from event
+            reelId: event.data.id,
+            progress: 0,
+            status: 'uploading',
+            message: 'Upload started'
+          });
+        }
+        break;
+        
       case "video.upload.asset_created":
+        console.info(`Upload event: ${event.type}`, event.data);
+        // Send processing progress
+        if (event.data?.id) {
+          await sendReelUploadProgress('user123', { // TODO: Get actual user ID from event
+            reelId: event.data.id,
+            progress: 50,
+            status: 'processing',
+            message: 'Video processing started'
+          });
+        }
+        break;
+        
       case "video.upload.cancelled":
       case "video.upload.errored":
-        // TODO: Handle upload events
         console.info(`Upload event: ${event.type}`, event.data);
+        // Send error notification
+        if (event.data?.id) {
+          await sendReelUploadProgress('user123', { // TODO: Get actual user ID from event
+            reelId: event.data.id,
+            progress: 0,
+            status: 'error',
+            message: `Upload ${event.type.includes('cancelled') ? 'cancelled' : 'failed'}`
+          });
+        }
         break;
 
       // Asset-related events
       case "video.asset.created":
       case "video.asset.updated":
+        console.info(`Asset event: ${event.type}`, event.data);
+        break;
+        
       case "video.asset.ready":
-        // TODO: Handle asset ready for playback
         console.info(`Asset ready event: ${event.type}`, event.data);
+        // Send reel ready notification
+        if (event.data?.id) {
+          await sendReelReady('user123', { // TODO: Get actual user ID from event
+            reelId: event.data.id,
+            playbackUrl: '', // TODO: Extract from event.data.playback_ids
+            thumbnailUrl: '', // TODO: Extract from event.data
+            duration: event.data.duration
+          });
+        }
         break;
 
       case "video.asset.deleted":

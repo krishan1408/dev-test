@@ -14,6 +14,11 @@ import type { Middleware } from "../types";
 export const authMiddleware: Middleware = async (request, next) => {
   const path = request.nextUrl.pathname;
 
+  // Allow SSE API routes to pass through (they handle auth internally)
+  if (path.startsWith('/api/sse')) {
+    return await next();
+  }
+
   // Universal routes can be accessed by everyone
   if (isUniversalRoute(path)) {
     return await next();
