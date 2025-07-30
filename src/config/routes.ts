@@ -31,6 +31,12 @@ export const paths = {
   landingPage: "/",
   homePage: "/home",
   reelsUploadPage: "/reels/upload",
+  sseDemoPage: "/sse-demo",
+  sseApiRoute: "/api/sse",
+  sseTestApiRoute: "/api/sse/test",
+  sseStatusApiRoute: "/api/sse/status",
+  sseConfigApiRoute: "/api/sse/config",
+  ssePersistentApiRoute: "/api/sse/persistent",
 } as const;
 
 // ⚠️ DEFINE METADATA FOR NEW ROUTES HERE ⚠️
@@ -50,5 +56,35 @@ export const routes: Record<keyof typeof paths, RouteData> = {
     name: "Reels Upload Page",
     path: paths.reelsUploadPage,
     accessType: "protected",
+  },
+  sseDemoPage: {
+    name: "SSE Demo Page",
+    path: paths.sseDemoPage,
+    accessType: "protected",
+  },
+  sseApiRoute: {
+    name: "SSE API Route",
+    path: paths.sseApiRoute,
+    accessType: "universal",
+  },
+  sseTestApiRoute: {
+    name: "SSE Test API Route",
+    path: paths.sseTestApiRoute,
+    accessType: "universal",
+  },
+  sseStatusApiRoute: {
+    name: "SSE Status API Route",
+    path: paths.sseStatusApiRoute,
+    accessType: "universal",
+  },
+  sseConfigApiRoute: {
+    name: "SSE Config API Route",
+    path: paths.sseConfigApiRoute,
+    accessType: "universal",
+  },
+  ssePersistentApiRoute: {
+    name: "SSE Persistent API Route",
+    path: paths.ssePersistentApiRoute,
+    accessType: "universal",
   },
 };
